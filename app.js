@@ -29,7 +29,7 @@ Ritter ultraviolet experiment:
     subject: "physics", 
     topic: "sp2:motion and forces", 
     text: "Explain how momentum is conserved in the collision. Use Newton's third law and Newton's second law in your answer.",
-    image: "physics2.jpg", 
+    image: "physics2.JPG", 
     markingScheme: `-momentum= mass x velocity
 -action and reaction forces are equal and opposite
 -force of R and Q = -force of R on Q
@@ -42,7 +42,7 @@ Ritter ultraviolet experiment:
     id: "p3", 
     subject: "physics", 
     topic: "sp2:motion and forces",
-    image: "physics3.jpg", 
+    image: "physics3.JPG", 
     text: "After a trolley is released, it accelerates down a slope and bounces off a rigid wall. The speed of a trolley can be measured just before a collision with the wall and just after a collision with the wall. The silver foils are connected to a millisecond timer. The silver foils make contact with each other during the collision, so the time they are in contact can be read from the millisecond timer. Explain how the student could investigate the effect of a crumple zone on the average force exerted during the collision. Your explanation should include: • how to determine the force (you may wish to refer to an equation from the list of equations at the end of this paper) • how the effect of crumple zones may be shown in the investigation • precautions that may be necessary to achieve accurate results. ", 
     markingScheme: [`"determine the forces:
 -use of f=ma  or  use of f=(mv-mu)/t
@@ -64,7 +64,7 @@ precautions and controls:
     id: "p4", 
     subject: "physics", 
     topic: "sp3: conservation of energy", 
-    image: "physics4.jpg",
+    image: "physics4.JPG",
     text: "Describe an investigation to find out how the nature of a surface affects the amount of thermal energy absorbed by the surface. You should use the apparatus in Figure 7 and any additional items you choose. Each can in Figure 7 has a bung in the top with a hole in it..", 
     markingScheme: [`"-use thermometer which is inserted into the can
 -use stopwatch and use measuring cyllinder
@@ -82,7 +82,7 @@ precautions and controls:
     subject: "physics", 
     topic: "sp4: waves", 
     text: "Use Figure 11a and Figure 11b to explain refraction and total internal reflection",
-    image: "physics5.jpg",
+    image: "physics5.JPG",
     markingScheme: [`"Refraction:
 -mark angle of incidence and angle of refraction on digram
 -angles are measured from normal and angle of refraction is greater than angle of incidence
@@ -156,7 +156,7 @@ stand behind a shield"`
     subject: "physics", 
     topic: "sp6: radioactivity", 
     text: "Explain how the graphite core and the movable rods are used to maintain and control the chain reaction. ", 
-    image: "physics9.jpg",
+    image: "physics9.JPG",
     markingScheme: [
       `"-neutrons are released in a chain reaction
 -slow neutrons are needed for fission
@@ -174,7 +174,7 @@ stand behind a shield"`
     subject: "physics", 
     topic: "sp7: astronomy", 
     text: "Discuss how evidence has changed our views of the universe.", 
-    image: "physics10.jpg",
+    image: "physics10.JPG",
     markingScheme: [
       `"-Telescopic evidence supported the heliocentric model like observing jupiters moons
 -the moons rotate around jupiter so not everything rotates about the earth
@@ -226,7 +226,7 @@ beginning at a single point:
     subject: "physics", 
     topic: "sp4: waves", 
     text: "Explain what the diagram in Figure 15 shows about the density of the Earth and the nature of the Earth's core.", 
-    image: "physics13.jpg",
+    image: "physics13.JPG",
     markingScheme: [
       `"at A:
 -longitudinal and transverse waves detected
@@ -451,7 +451,7 @@ Method:
     subject: "physics", 
     topic: "sp10: electricity and circuits", 
     text:`Explain how changes in the filament of the lamp account for this graph`,
-    image: "physics25.jpg", 
+    image: "physics25.JPG", 
     markingScheme: [`"Change in resistance:
 -calculate 2 different resistances
 -resistance of lamp is constant to 3V and the resistance increases with increasing voltage
@@ -471,7 +471,7 @@ Change in temperature:
     subject: "physics", 
     topic: "sp10: electricity and circuits", 
     text:`Explain, in terms of the movement of charged particles, how energy is transferred from the battery, through the lamp, to the surroundings.`,
-    image: "physics26.jpg", 
+    image: "physics26.JPG", 
     markingScheme: [`" -the batteries store energy as chemical energy 
 -he energy is transferred to electrons to make them flow/move
 -the current is a flow of electrons
@@ -502,7 +502,7 @@ Change in temperature:
     subject: "physics", 
     topic: "sp9:Forces and their effects", 
     text:`Explain how the forces keep the wooden block moving across the table at a constant horizontal velocity.`,
-    image:"physics28.jpg",
+    image:"physics28.JPG",
     markingScheme: [`"Horizontal forces:
 -tension in the string/pull of the string
 -ension is one of the horizontal forces acting on
@@ -534,7 +534,7 @@ Vertical forces:
     text:`"Describe how a student could use this apparatus, and any additional items needed, to determine the specific heat capacity of aluminium. Your answer should include:
 . how the student would obtain the necessary measurements 
 • use the measurements to calculate the specific heat capacity of aluminium."`,
-    image:"physics29.jpg",
+    image:"physics29.JPG",
     markingScheme: [`"
 - Measure the temperature of the boiling water
 - Allow sufficient time for block to reach temperature of boiling water
@@ -560,7 +560,7 @@ Vertical forces:
     subject: "physics", 
     topic: "sp14:Particle model", 
     text:`Explain, in terms of the movement of particles, why there is a pressure on the container and why the pressure changes as shown in Figure 18.`,
-    image:" physics30.jpg",
+    image:" physics30.JPG",
     markingScheme: [`"-gas particles are in (random) motion
 Particles hit sides of container / each other
 -This produces (net) force on (sides of) container
@@ -579,7 +579,7 @@ Particles hit sides of container / each other
     subject: "physics", 
     topic: "sp15: Forces and Matter", 
     text:`The boat floats lower in the water when there is a load inside the boat. Explain why the boat floats in water and why the boat floats lower in the water when there is a load inside the boat.`,
-    image:" physics31.jpg",
+    image:" physics31.JPG",
     markingScheme: [`"Pressure:
 -Difference in pressure between top and bottom of boat
 -top pressure is atmospheric
@@ -608,7 +608,7 @@ displaces more water
     subject: "physics", 
     topic: "sp15: Forces and Matter", 
     text:`Explain why the tip of the drawing pin goes into the wood but the head dosent go into the thumb`,
-    image:"physics32.jpg",
+    image:"physics32.JPG",
     markingScheme: [`"—same force at tip and head of the thumb tack 
 -flat end has a large surface area
 -pointed end has a very small surface area
@@ -626,7 +626,7 @@ displaces more water
     topic: "sp15: Forces and Matter", 
     text:`"A crane lifts a block out of water until it is high enough to be loaded onto a lorry.
 Explain why the lifting force changes as shown on the graph in Figure 18. Include calculation(s) in your answer."`,
-    image:"physics33.jpg",
+    image:"physics33.JPG",
     markingScheme: [`"Between 0 and 120 seconds:
 -The (apparent) weight of the block is less than in air 
 -force in the cable is less (than weight of block) 
@@ -660,7 +660,7 @@ Between 120 and 140 seconds:
     subject: "physics", 
     topic: "sp8: Energy-forces doing work", 
     text:`Devise an experiment to investigate how the efficiency of the pulley system varies with the weight of metal being lifted. Your answer should include how you will use your measurements.`,
-    image:"physics34.jpg",
+    image:"physics34.JPG",
     markingScheme: [`"Use of equipment:
 -Provide a measurable load; for example hang a cube on one end of the system / on spring (balance)
 -Provide a measurable effort; for example hang spring balance on other end of system
@@ -686,7 +686,7 @@ Processing results:
     subject: "physics", 
     topic: "sp13:Electromagnetic induction", 
     text:`Describe changes that can be made to produce different currents and the effect of each change.`,
-    image:"physics35.jpg",
+    image:"physics35.JPG",
     markingScheme: [`"- speed of movement 
 -stronger / more powerful magnet
 - more turns / coils (ORA)
@@ -703,7 +703,7 @@ Processing results:
     subject: "physics", 
     topic: "sp13:Electromagnetic induction", 
     text:`Transformers R and S are not 100% efficient. By using transformers, energy losses in the transmission lines are reduced. Explain how this reduction is achieved, even though some energy is wasted in the transformers themselves`,
-    image:"physics36.jpg",
+    image:"physics36.JPG",
     markingScheme: [`"
 -transmission lines have resistance
 -the current warms the transmission wires
@@ -765,7 +765,7 @@ Comparison:
     subject: "physics", 
     topic: "sp12:Magnetism and the motor effect", 
     text:`Explain why the current changes in the way shown by the graph in Figure 20. Your answer should include details of the position of the coil relative to the magnet at each of the times labelled P, Q, R, S and T.`,
-    image:"physics38.jpg",
+    image:"physics38.JPG",
     markingScheme: [`"
 -Coil experiences changing magnetic field
 - induces a voltage/current in the coil
@@ -804,7 +804,7 @@ Comparison:
     subject: "physics", 
     topic: "sp13:Electromagnetic induction", 
     text:`Compare how the device operates when used as a loudspeaker with how the device operates when used as a microphone.`,
-    image:"physics40.jpg",
+    image:"physics40.JPG",
     markingScheme: [`"
 " Basic facts :
 -Sound is vibrations (of air)
@@ -838,7 +838,7 @@ Details of operation of microphone:
     subject: "physics", 
     topic: "sp13:Electromagnetic induction", 
     text:`"Using Figure 22, explain the stages in the process of delivering electricity efficiently from P to T. Your answer should include details of the effects that Q, R and S have on efficiency. "`,
-    image:"physics41.jpg ",
+    image:"physics41.JPG ",
     markingScheme: [`"- q is a step-up transformer 
 - step up Voltage causes current to be lower
 -voltage increases (25 kV to 400 kV)
@@ -865,7 +865,7 @@ parts of the device.
  Your answer should refer to
 • the sizes of the different parts of the device
 • how these sizes are used in relevant calculations`,
-    image:"physics42.jpg ",
+    image:"physics42.JPG ",
     markingScheme: [`"Relevant sizes of components :
 - Length of bar
 -Number of teeth on gear(s)
@@ -898,7 +898,7 @@ information given in Figure 23.
 Your answer should include
 -circuit diagrams showing how the currents and voltages can be measured
 -a comparison of the resuits that would be expected`,
-    image:"physics43.jpg ",
+    image:"physics43.JPG ",
     markingScheme: [`"Description (may be inferred from circuit diagram(s)):
 -Connect ammeter in series with resistor(s)
 -Connect voltmeter across / in parallel with resistor(s)
@@ -928,7 +928,7 @@ Expected results (allow reverse arguments):
     subject: "chemistry", 
     topic: "sc3:Atomic structure", 
     text: "Use this information to explain why, in this sample, magnesium has a relative atomic mass of 24.3",
-    image:"chemistry1.jpg",
+    image:"chemistry1.JPG",
     markingScheme: [`"relative atomic mass of magnesium is 24.3 (and not 24) due to:
 - the existence of more than one isotope.
 -accurate relative mass Is calculated using weighted mean
@@ -957,7 +957,7 @@ OR:
     subject: "chemistry", 
     topic: "sc7:Types of substance", 
     text: "Describe what information can be obtained from each representation including the limitations of these representations of methane. ", 
-    image:"chemistry2.jpg",
+    image:"chemistry2.JPG",
     markingScheme: [`"- they show methane contains carbon and hydrogen
 - structure A only shows the ratio of C:H (as 1:4)
 - structure A gives no information about bonding in molecule
@@ -981,7 +981,7 @@ OR:
     subject: "chemistry", 
     topic: "sc7:Types of substance", 
     text: "Deduce, using the information in Figure 6, the structure and bonding of substances A, B and C, explaining their properties in terms of their structure and bonding", 
-    image:"chemistry3.jpg",
+    image:"chemistry3.JPG",
     markingScheme: [`"Substance A :
 - giant ionic structure
 -(high melting point) strong electrostatic attractions between ions
@@ -1010,7 +1010,7 @@ Substance C:
     subject: "chemistry", 
     topic: "sc6:Ionic bonding", 
     text: "Explain, in terms of bonding and structure, why the properties of the product, calcium chloride, are different from the properties of the reactants, calcium and chlorine.", 
-    image:"chemistry4.jpg",
+    image:"chemistry4.JPG",
     markingScheme: [`"STRUCTURE:
 - calcium chloride is an ionic compound with lattice of postive and negative ions
 - calcium is a metal and so has a metallic structure of delocalized electrons and (calcium/Ca2+ ions).
@@ -1039,7 +1039,7 @@ CONDUCTIVITY WHEN MOLTEN:
     subject: "chemistry", 
     topic: "sc7:Types of substance", 
     text: "Explain, in terms of their structures and bonding, their relative melting points, strengths and abilities to conduct electricity.", 
-    image:"chemistry5.jpg",
+    image:"chemistry5.JPG",
     markingScheme: [`"-in all structures the carbon atoms bonded by single covalent bonds
  -shared pair of electrons so strong bonds
  -In diamond each carbon atom joined to four others
@@ -1064,7 +1064,7 @@ CONDUCTIVITY WHEN MOLTEN:
     subject: "chemistry", 
     topic: "sc2:Methods of seperating and purifying substances", 
     text: "Devise a plan to separate pure water from a mixture containing a dissolved solid, including a test to show that the water obtained is neutral.", 
-    image:"chemistry6.jpg",
+    image:"chemistry6.JPG",
     markingScheme: [`"Seperation:
 -distilation
 -solution in flask
@@ -1141,7 +1141,7 @@ magnesium:
 -a solid appears directly beneath the anode
 -the colour of the copper sulfate solution does not change.
 Explain all three observations`, 
-    image:"chemistry9.jpg",
+    image:"chemistry9.JPG",
     markingScheme: [`"-copper atoms form copper ions at anode 
 -(copper atoms are oxidised / lose electrons)
 - Cu = cu2+ +2e
@@ -1165,7 +1165,7 @@ Explain all three observations`,
     subject: "chemistry", 
     topic: "sc13:Transition metals , alloys and corrosion", 
     text: "Explain how alloying changes these pure metals to make the alloys more suitable for the given uses", 
-    image:"chemistry10.jpg",
+    image:"chemistry10.JPG",
     markingScheme: [`"-an alloy is a mixture of metals
 -because larger/different sized atoms introduced in alloying,
 -stop layers moving easily over one another
@@ -1239,7 +1239,7 @@ molten:
     subject: "chemistry", 
     topic: "sc15 and sc12: Dynamic Equilibria", 
     text: "Explain, by considering the effect of changing the conditions on the rate of attainment of equilibrium and on the equilibrium yield of sulfur trioxide, why the manufacturer chooses the set of conditions B rather than the set of conditions A. ", 
-    image:"chemistry13.jpg",
+    image:"chemistry13.JPG",
     markingScheme: [`"-equillrium reached faster because of higher temperature in set A/ equilbrium reached slower because of lower temperature in set B
 - higher temperature means more frequent collisions because molecules have more energy / ORA for lower temperature in set B
 -decrease in temperature increases equilibrium yield but system takes longer to reach equilibrium
@@ -1291,7 +1291,7 @@ molten:
 large quantities of propene using this equilibrium reaction.
 Suggest, with explanations, suitable conditions that the manufacturer could use to
 maximise the yield and rate of production of propene from propane.`, 
-    image:"chemistry15.jpg",
+    image:"chemistry15.JPG",
     markingScheme: [`"-use of suitable catalyst (any suitable metal)
 -helps increase rate of forward reaction
 -and helps increase rate of back reaction
@@ -1339,7 +1339,7 @@ maximise the yield and rate of production of propene from propane.`,
 - a pressure of 10 atm, rather than atmospheric pressure
 - a temperature of 900 °C, rather than room temperature.
 Explain the effect of the conditions chosen on the equilibrium yield of nitrogen oxide and on the rate of attainment of equilibrium."`, 
-    image:"chemistry17.jpg",
+    image:"chemistry17.JPG",
     markingScheme: [`"excess air:
 -Increases oxygen concentration
 -so excess air favours right hand side
@@ -1376,7 +1376,7 @@ surroundings.The conditions used for this reaction are:
 - a nickel catalyst
 - a temperature of 220 °C
 Explain, in terms of their effects on the rate of attainment of equilibrium and the equilibrium yield of hydrogen, why the reaction is carried out using a catalyst at 220 °C rather than without a catalyst at a lower temperature."`, 
-    image:"chemistry18.jpg",
+    image:"chemistry18.JPG",
     markingScheme: [`"effect of using a catalyst:
 -increases rate of attainment of equilibrium
 - increasing rate of both forward and back reaction
@@ -1489,7 +1489,7 @@ disadvantages:
     text: `" use the results of these experiments to explain, in terms of the behaviour of 
 particles, the effect of changing temperature and the effect of changing the
 concentration of A in solution on the rate of this reaction. "`,
-    image:"chemistry23.jpg",
+    image:"chemistry23.JPG",
     markingScheme: [`"-reactions occur when particle collisions have sufficient energy (activation energy) 
 -reaction rates are increased when the energy collisions is increased
 - and / or the frequency of collisions is increased
@@ -1514,7 +1514,7 @@ concentration of A in solution on the rate of this reaction. "`,
     subject: "chemistry", 
     topic: "sc20:Feuls", 
     text: `Discuss and compare the impact on the environment of the emissions from these three cars using the information from Figure 9. `,
-    image:"chemistry24.jpg",
+    image:"chemistry24.JPG",
     markingScheme: [`"pollutants:
 -carbon monoxide combines with haemoglobin so is toxic
 - nitrogen oxides are acidic / toxic
@@ -1570,7 +1570,7 @@ Overall comparison:
     subject: "chemistry", 
     topic: "sc18:Rates of reaction", 
     text: `Devise a plan, including the apparatus you would use, to test the student's prediction. You are provided with pieces of zinc and two bottles of dilute hydrochloric acid. One bottle of hydrochloric acid is double the concentration of the other. `,
-    image:"chemistry26.jpg",
+    image:"chemistry26.JPG",
     markingScheme: [`"- measure equal masses of zinc using balance
 - measure equal volumes of acid using measuring cylinder /pipette suitable named piece of apparatus
 - pour acid in suitable container
@@ -1594,7 +1594,7 @@ Overall comparison:
     subject: "chemistry", 
     topic: "sc22:Hydrocarbons", 
     text: `Discuss the complete and incomplete combustion of these alkanes and the trend in the energy changes they produced. You should give word equations in your answer.`,
-    image:"chemistry27.jpg",
+    image:"chemistry27.JPG",
     markingScheme: [`"Reactions:
 - combustion is reaction with oxygen
 - complete combustion produces carbon dioxide
@@ -1620,7 +1620,7 @@ Energy released:
     subject: "chemistry", 
     topic: "sc23:Alcohols and carboxylic acids", 
     text: `" Describe an experiment, using the equipment in Figure 16, that could be used to obtain results that show the energy content of a variety of Alcohols"`,
-    image:"chemistry28.jpg",
+    image:"chemistry28.JPG",
     markingScheme: [`"-measure 100 cm3 of water into a beaker. 
 -place the beaker above the burner
 -place draft shields around the equipment
@@ -1644,7 +1644,7 @@ Energy released:
     subject: "chemistry", 
     topic: "sc22:Hydrocarbons", 
     text: `Explain, using the data in Figure 12, why these compounds belong together in the same homologous series`,
-    image:"chemistry29.jpg",
+    image:"chemistry29.JPG",
     markingScheme: [`"Formula :
 - same general formula
 - CₙH₂ₙ₊₁COOH
@@ -1809,7 +1809,7 @@ more writing up of results/ put in table etc "`     ]
     subject: "chemistry", 
     topic: "sc17:Groups in the periodic table", 
     text: `"explain, in terms of their electronic configurations and the relative reactivity of these  elements, which of the reactions shown in Figure 10 would be the most violent."`,
-    image:"chemistry35.jpg",
+    image:"chemistry35.JPG",
     markingScheme: [`"- group 1 metals form positive ions 
 -outer electron lost
 -further down the group outer electron more easily lost
@@ -1832,7 +1832,7 @@ more writing up of results/ put in table etc "`     ]
     subject: "chemistry", 
     topic: "sc24:Polymers", 
     text: `"Discuss the reasons for using these polymers in the ways shown in Figure 13 and the problems in disposing of these polymers."`,
-    image:"chemistry36.jpg",
+    image:"chemistry36.JPG",
     markingScheme: [`"poly(ethene) :
 -plastic bags / plastic bottles 
 -flexible bendable, inert/unreactive, waterproof/weatherproof, light
@@ -1946,7 +1946,7 @@ Explanation:
     subject: "chemistry", 
     topic: "sc20:Feuls", 
     text: `Discuss the advantages and disadvantages of the two methods`,
-    image:"chemistry40.jpg",
+    image:"chemistry40.JPG",
     markingScheme: [`"- sugar cane can be re-grown/is renewable
 - crude oil is finite/ cannot be replaced/is non-renewable
 - fermentation uses lower temperatures so energy costs are lower/ hydration uses higher temperatures, so energy costs are higher
@@ -1964,7 +1964,7 @@ Explanation:
     subject: "biology", 
     topic: "sb1:Key concept of biology", 
     text: "Devise a method to compare the energy content of two foods using this equipment. Include details of how to control the variables.", 
-    image:"biology1.jpg",
+    image:"biology1.JPG",
     markingScheme: [
       `using the equipment :
 -add water to the boiling tube
@@ -2016,7 +2016,7 @@ Cytokinesis :
     subject: "biology", 
     topic: "sb2:Cells and control", 
     text: "Describe the causes of short-sightedness and long-sightedness.", 
-    image:"biology3.jpg",
+    image:"biology3.JPG",
     markingScheme: [
       `"sort-sightedness 
 -eyeball too long
@@ -2157,7 +2157,7 @@ Impact on medical treatment:
     subject: "biology", 
     topic: "sb4:Natural selection and Genetic modification", 
     text: "Explain how information from Figure 15 provides evidence for human evolution.", 
-    image:"biology9.jpg",
+    image:"biology9.JPG",
     markingScheme: [
       `"Age of tools:
 -Younger rock layers towards top / older rock layers lower down
@@ -2218,7 +2218,7 @@ manipulation / greater skill (between C and A)
     subject: "biology", 
     topic: "sb4:Natural selection and Genetic modification", 
     text: `Explain how selective breeding of the two varieties of potato plants can produce new potato plants that are all faster growing and produce many, large potatoes. `, 
-    image:"biology12.jpg",
+    image:"biology12.JPG",
     markingScheme: [
       `"- Select variety A because it has large potatoes 
 -Select variety B because is faster growing and produces many potatoes 
@@ -2542,7 +2542,7 @@ substrate / enzyme concentration:
     subject: "biology", 
     topic: "sb2:Cells and control", 
     text: `Using the diagram and your own knowledge, describe the processes that take place in the formation of the fetus from a sperm cell and an egg cell.`, 
-    image:"biology25.jpg",
+    image:"biology25.JPG",
     markingScheme: [
       `"-fertilisation of egg by sperm 
 -ref to fusion of nuclei
@@ -2696,7 +2696,7 @@ Translocation:
     subject: "biology", 
     topic: "sb6:Plant structures and their functons", 
     text: `Devise a plan to investigate the effect of light intensity on the rate of photosynthesis. Include variables you would need to control. `, 
-    image:"biology32.jpg",
+    image:"biology32.JPG",
     markingScheme: [
       `"plan for the investigation:
 -put a light (source) at a distance away from the pondweed
@@ -2813,7 +2813,7 @@ Water moves up stem (to leaves)
     subject: "biology", 
     topic: " sb6:Plant structures and their functons", 
     text: `Explain how hormones in the roots and shoots of plants caused this directional growth.`, 
-    image:"biology36.jpg",
+    image:"biology36.JPG",
     markingScheme: [
       `"root growth:
 -auxins
@@ -2837,7 +2837,7 @@ root growth:
     subject: "biology", 
     topic: "sb6:Plant structures and their functons", 
     text: `Explain why the growth of the plant has changed`, 
-    image:"biology37.jpg",
+    image:"biology37.JPG",
     markingScheme: [
       `"observations :
 -the plant stem bends
@@ -2863,7 +2863,7 @@ explanations:
     subject: "biology", 
     topic: "sb7:Animal coordination, control and Homeostasis", 
     text: `Describe how dialysis removes unwanted substances from the blood. Include examples of unwanted substances in your answer`, 
-    image:"biology39.jpg",
+    image:"biology39.JPG",
     markingScheme: [
       `"Blood to machine:
 -kidney dialysis is used when a person's kidneys are damaged / don't remove urea from blood
@@ -2915,7 +2915,7 @@ Ethene:
     subject: "biology", 
     topic: "sb7:Animal coordination, control and Homeostasis", 
     text: `Explain how structures in the skin help to reduce body temperature during hot weather`, 
-    image:"biology40.jpg",
+    image:"biology40.JPG",
     markingScheme: [
       `" How skin structures respond during hot weather:
 Gland:
@@ -3088,7 +3088,7 @@ WBC:
     subject: "biology", 
     topic: "sb8:Exchange and transport in Animals", 
     text: `Explain how the structure of the heart is related to its function.`, 
-    image:"biology47.jpg",
+    image:"biology47.JPG",
     markingScheme: [
       `"Functions linked to structures:
 -walls contract / the heart pumps blood
@@ -3109,7 +3109,7 @@ WBC:
     subject: "biology", 
     topic: "sb8:Exchange and transport in Animals", 
     text: `Explain the changes in blood flow, shown in Figure 13, that are caused by exercise`, 
-    image:"biology48.jpg",
+    image:"biology48.JPG",
     markingScheme: [
       `"increased blood flow: 
 -pump more blood
