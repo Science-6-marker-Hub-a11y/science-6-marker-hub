@@ -1062,7 +1062,7 @@ CONDUCTIVITY WHEN MOLTEN:
   { 
     id: "c6", 
     subject: "chemistry", 
-    topic: "sc2:Methods of seperating and purifying substances", 
+    topic: "sc2:Methods of separating and purifying substances", 
     text: "Devise a plan to separate pure water from a mixture containing a dissolved solid, including a test to show that the water obtained is neutral.", 
     image:"chemistry6.JPG",
     markingScheme: [`"Seperation:
@@ -1237,7 +1237,7 @@ molten:
   { 
     id: "c13", 
     subject: "chemistry", 
-    topic: "sc15 and sc12: Dynamic Equilibria", 
+    topic: "sc15 and sc12: Dynamic Equilibrium", 
     text: "Explain, by considering the effect of changing the conditions on the rate of attainment of equilibrium and on the equilibrium yield of sulfur trioxide, why the manufacturer chooses the set of conditions B rather than the set of conditions A. ", 
     image:"chemistry13.JPG",
     markingScheme: [`"-equillrium reached faster because of higher temperature in set A/ equilbrium reached slower because of lower temperature in set B
@@ -1286,7 +1286,7 @@ molten:
    { 
     id: "c15", 
     subject: "chemistry", 
-    topic: "sc15 and sc12: Dynamic Equilibria", 
+    topic: "sc15 and sc12: Dynamic Equilibrium", 
     text: `The forward reaction takes in heat energy and is endothermic. A manufacturer produces
 large quantities of propene using this equilibrium reaction.
 Suggest, with explanations, suitable conditions that the manufacturer could use to
@@ -1315,7 +1315,7 @@ maximise the yield and rate of production of propene from propane.`,
   { 
     id: "c16", 
     subject: "chemistry", 
-    topic: "sc15 and sc12: Dynamic Equilibria", 
+    topic: "sc15 and sc12: Dynamic Equilibrium", 
     text: `The reaction between nitrogen and hydrogen is exothermic. If nitrogen and hydrogen were reacted at 150 atm pressure and 300 °C, without a catalyst, some ammonia would be formed. In the Haber process a pressure of 150 atm and a temperature of 450 °C are used, in the presence of an iron catalyst. Explain why the conditions used in the Haber process are better than the first set of conditions for the manufacture of ammonia.`, 
     markingScheme: [`"The effect of the temperature rise on the rate of attainment of equilibrium and on the equilibrium yield are considered by:
 -higher temperature reaches equilibrium faster because molecules move faster
@@ -1333,7 +1333,7 @@ maximise the yield and rate of production of propene from propane.`,
   { 
     id: "c17", 
     subject: "chemistry", 
-    topic: "sc15 and sc12: Dynamic Equilibria", 
+    topic: "sc15 and sc12: Dynamic Equilibrium", 
     text: `"The conditions chosen for the reaction are :
 -excess air, rather than just the right amount
 - a pressure of 10 atm, rather than atmospheric pressure
@@ -1449,7 +1449,7 @@ Structural change
   { 
     id: "c21", 
     subject: "chemistry", 
-    topic: "sc16:Hydrogen and oxygen feul cells", 
+    topic: "sc16:Hydrogen and oxygen fuel cells", 
     text: `Hydrogen-oxygen fuel cells can be used to provide electrical energy in a spacecraft. The reaction that takes place in the fuel cell is hydrogen + oxygen → water Evaluate the advantages and disadvantages of providing electrical energy in a spacecraft using hydrogen-oxygen fuel cells rather than chemical cells. `,
      markingScheme: [`"advantages:
 -once set up, fuel cells require no maintenance
@@ -1512,7 +1512,7 @@ concentration of A in solution on the rate of this reaction. "`,
   { 
     id: "c24", 
     subject: "chemistry", 
-    topic: "sc20:Feuls", 
+    topic: "sc20:Fuels", 
     text: `Discuss and compare the impact on the environment of the emissions from these three cars using the information from Figure 9. `,
     image:"chemistry24.JPG",
     markingScheme: [`"pollutants:
@@ -1546,7 +1546,7 @@ Overall comparison:
   { 
     id: "c25", 
     subject: "chemistry", 
-    topic: "sc20:Feuls", 
+    topic: "sc20:Fuels", 
     text: `Diesel oil can contain impurities of sulfur. Burning diesel oil containing impurities of sulfur can result in acid rain. Acid rain is harmful to the environment. Explain how acid rain is formed and the harm it can do. `,
     markingScheme: [`"- sulfur burns at the same time as the hydrocarbon 
 -sulfur reacts with oxygen
@@ -2694,7 +2694,7 @@ Translocation:
   { 
     id: "b32", 
     subject: "biology", 
-    topic: "sb6:Plant structures and their functons", 
+    topic: "sb6:Plant structures and their functions", 
     text: `Devise a plan to investigate the effect of light intensity on the rate of photosynthesis. Include variables you would need to control. `, 
     image:"biology32.JPG",
     markingScheme: [
@@ -2731,7 +2731,7 @@ amount of pondweed:
   { 
     id: "b33", 
     subject: "biology", 
-    topic: "sb6:Plant structures and their functons", 
+    topic: "sb6:Plant structures and their functions", 
     text: `Explain how water, glucose and mineral salts are transported through a plant.`, 
     markingScheme: [
       `"water:
@@ -2759,7 +2759,7 @@ mineral salts
   { 
     id: "b34", 
     subject: "biology", 
-    topic: "sb6:Plant structures and their functons", 
+    topic: "sb6:Plant structures and their functions", 
     text: `Explain how active transport and diffusion provide a plant with named substances it needs for growth.`, 
     markingScheme: [
       `"- active transport requires energy 
@@ -2782,7 +2782,7 @@ mineral salts
   { 
     id: "b35", 
     subject: "biology", 
-    topic: "sb6:Plant structures and their functons", 
+    topic: "sb6:Plant structures and their functions", 
     text: `Explain how water enters a plant and is moved to the leaf`, 
     markingScheme: [
       `"Water enters root:
@@ -2811,7 +2811,7 @@ Water moves up stem (to leaves)
   { 
     id: "b36", 
     subject: "biology", 
-    topic: " sb6:Plant structures and their functons", 
+    topic: " sb6:Plant structures and their functions", 
     text: `Explain how hormones in the roots and shoots of plants caused this directional growth.`, 
     image:"biology36.JPG",
     markingScheme: [
@@ -2835,7 +2835,7 @@ root growth:
   { 
     id: "b37", 
     subject: "biology", 
-    topic: "sb6:Plant structures and their functons", 
+    topic: "sb6:Plant structures and their functions", 
     text: `Explain why the growth of the plant has changed`, 
     image:"biology37.JPG",
     markingScheme: [
@@ -2886,7 +2886,7 @@ How substances are removed from blood:
   { 
     id: "b38", 
     subject: "biology", 
-    topic: "sb6:Plant structures and their functons", 
+    topic: "sb6:Plant structures and their functions", 
     text: `Explain the uses of auxins, gibberellins and ethene in the commercial production of plants and fruits.`, 
     markingScheme: [
       `"Auxins:

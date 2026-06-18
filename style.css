@@ -433,3 +433,8 @@ body.theme-midnight .card:hover {
 #modal-scheme-box::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
+
+/* Paste this at the very bottom of your CSS file */
+.filter-badge {
+    text-transform: capitalize;
+}
