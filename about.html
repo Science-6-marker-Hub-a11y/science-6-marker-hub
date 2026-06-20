@@ -4,54 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Science 6-Marker Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="7f2b7de7-ae0b-407a-bd67-a8b2489c8e01"></script>
 </head>
 <body>
+
+    <!-- Global Top Nav Bar -->
+    <nav class="top-nav-bar">
+        <h1 class="brand-title">Science 6-Marker Hub</h1>
+        <div class="nav-links-cluster">
+            <a href="index.html" class="top-nav-link">Home</a>
+            <a href="about.html" class="top-nav-link">About Us</a>
+            <a href="services.html" class="top-nav-link">Services</a>
+            <a href="contact.html" class="top-nav-link">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
     <div class="app-container">
-        <header class="app-header">
-            <h1>ℹ️ About Us</h1>
-            <p>Master the pesky 6-Mark questions for GCSE Exam papers</p>
-            <nav class="app-nav" style="margin-top: 12px; display: flex; justify-content: center; gap: 20px;">
-                <a href="index.html" style="color: #38bdf8; font-weight: 600; text-decoration: none; font-size: 0.95rem; border-bottom: 2px solid transparent; transition: all 0.2s ease;" onmouseover="this.style.borderBottom='2px solid #38bdf8'" onmouseout="this.style.borderBottom='2px solid transparent'">🏠 Back to Home</a>
-                <a href="contact.html" style="color: #38bdf8; font-weight: 600; text-decoration: none; font-size: 0.95rem; border-bottom: 2px solid transparent; transition: all 0.2s ease;" onmouseover="this.style.borderBottom='2px solid #38bdf8'" onmouseout="this.style.borderBottom='2px solid transparent'">✉️ Contact Us</a>
-            </nav>
+        
+        <header class="subject-header">
+            <a href="index.html" class="back-link">← Back to Dashboard</a>
+            <h2 class="subject-title">ℹ️ About Us</h2>
+            <p class="subject-subtitle">Master the pesky 6-Mark questions for GCSE Exam papers</p>
         </header>
 
-        <main class="card" style="cursor: default; text-align: left; padding: 2.5rem 2rem;">
+        <main class="card" style="cursor: default; padding: 40px;">
+            <h2 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 20px;">The idea behind the masterpiece</h2>
             
-            <h2 style="color: var(--primary); margin-top: 0;">The idea behind the masterpiece</h2>
-            <p class="question-text">
-               6 mark questions are difficult, there is no doubt about it. You could write your entire textbook as an answer for a question but still score a solid 3 out of 6 because it "doesn't match the marking scheme". It is annoying. That is why we built this website which lets you have access to every single type of 6 marker question to ever be created. Imagine memorizing every single marking scheme for every topic, you would never be caught off-guard, no matter which type of question your teacher tries to surprise you with; you are just simply 2 -steps ahead. Now, go ahead and utilize this website to the maximum to stay ahead of the curve. Good Luck.
+            <p class="question-text" style="margin-bottom: 20px;">
+                6-mark questions are difficult; there is no doubt about it. You could write your entire textbook as an answer for a question but still score a 3 out of 6 because it "doesn't match the marking scheme". It is annoying, and for a while, I too was struggling with such an issue. No matter how much time I spent revising my teacher's PPTs, the outcome was always the same. That was until I finally understood something.
+            </p>
+            
+            <p class="question-text" style="margin-bottom: 20px;">
+                Many people think that to excel in an exam you need to revise the content thoroughly, and while there is some truth in that, the absolute key to becoming a topper is right in the past papers. An examiner can only ask you so many questions until he finally runs out of variations if the core content stays the same. So, why not just master every single type of question he could ask? In that case, you would always be two steps ahead. If you memorize the exact marking scheme requirements for every topic, there is simply no way for you to lose easy marks.
             </p>
 
-            <h3 style="color: var(--text-main); margin-top: 1.5rem;">What we offer:</h3>
-            <ul style="color: var(--text-muted); line-height: 1.7; padding-left: 20px;">
-                <li>Exact past paper questions and marking schemes for Physics, Chemistry, and Biology </li>
-                <li>A question bank sourced from GCSE , IGCSE and Legacy boards for every type of question for every type of topic</li>
-                <li>Topic-specific filtering to focus on weak areas or identify possible questions for school-based assessments and pre-mocks.</li>
-            </ul>
-
-            <div style="margin-top: 2rem; display: flex; gap: 12px; flex-wrap: wrap;">
-                <a href="index.html" class="btn subject-btn active" style="text-decoration: none; display: inline-block;">← Back to the questions</a>
-                <a href="contact.html" class="btn subject-btn" style="text-decoration: none; display: inline-block; background: var(--border); color: var(--text-main);">Contact Us ✉️</a>
-            </div>
-
+            <p class="question-text">
+                It was an excellent idea, but following through with it was a challenge. So many past papers, and each one containing a lot more questions. But I decided that I would take it on. I carefully analyzed every question relevant to GCSE and procured every marking scheme across GCSE, IGCSE, and legacy boards. Finally, all of them reside here, in one place, for anyone to use.
+            </p>
+        
         </main>
 
-        <div style="background: rgba(56, 189, 248, 0.05); border: 1px solid var(--border); border-left: 4px solid var(--primary); padding: 1.2rem; border-radius: 12px; margin-top: 2rem;">
-            <strong style="color: var(--primary); display: block; margin-bottom: 0.4rem;">🔒 Built on Real Exam Standards</strong>
-            <span style="color: var(--text-main); font-size: 0.95rem; line-height: 1.5;">
-                We don't use AI to guess your grades or generate fake answers. Every question and marking scheme on this hub is taken directly from official past paper guidelines, ensuring 100% accuracy for your revision.
-            </span>
-        </div>
     </div>
-    <footer class="app-footer">
-        <div class="footer-content">
-            <p class="disclaimer-text">
-                <strong>Disclaimer:</strong> This website is an independent, unofficial educational resource. It is not endorsed by, affiliated with, or sponsored by Pearson Edexcel. All exam board names, curriculum specifications, and related trademarks belong solely to their respective owners.
-            </p>
-        </div>
-    </footer>   
+
 </body>
 </html>

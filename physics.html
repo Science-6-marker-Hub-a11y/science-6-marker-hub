@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics 6-Markers - Science Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="7f2b7de7-ae0b-407a-bd67-a8b2489c8e01"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="subject-header">
+            <a href="index.html" class="back-link">⬅️ Back to Hub</a>
+            <h1 class="subject-title">Physics 6-Markers</h1>
+            <p class="subject-subtitle">Select a topic below to review exam-specific long answer questions.</p>
+        </header>
+
+        <div class="controls-bar">
+            <div class="filter-wrapper">
+                <label for="topic-filter">Filter by Topic:</label>
+                <select id="topic-filter" onchange="filterByTopic()">
+                    <option value="All">All Physics Topics</option>
+                    <option value="Energy">Energy Stores & Transfers</option>
+                    <option value="Electricity">Electricity & Circuits</option>
+                    <option value="Particle Model">Particle Model of Matter</option>
+                    <option value="Atomic Structure">Atomic Structure & Radiation</option>
+                </select>
+            </div>
+        </div>
+
+        <main class="feed-section">
+            <h2 class="feed-status-heading" id="feed-heading">Showing All Questions</h2>
+            <div id="questions-container">
+                </div>
+        </main>
+    </div>
+
+    <div id="fullscreen-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal-btn" onclick="closeModal()">&times;</span>
+            
+            <div class="modal-header">
+                <span id="modal-topic" class="filter-badge">Topic</span>
+                <span id="modal-counter">1 of 10</span>
+            </div>
+            
+            <div class="modal-body">
+                <p id="modal-text" class="question-text">Question content goes here...</p>
+                <div id="modal-image-container"></div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="action-btn scheme-toggle" onclick="toggleModalScheme()" id="modal-scheme-btn">
+                    👁️ Reveal Mark Scheme
+                </button>
+                <div class="marking-scheme-panel" id="modal-scheme-box" style="display: none;">
+                    <ul id="modal-scheme-list"></ul>
+                </div>
+            </div>
+
+            <div class="modal-nav-bar">
+                <button class="action-btn" onclick="navigateModal(-1)">Previous</button>
+                <button class="action-btn" onclick="navigateModal(1)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

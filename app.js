@@ -3399,24 +3399,34 @@ Water pollution:
 // ==========================================
 // 2. STATE APP TRACKERS
 // ==========================================
-let currentSubject = 'physics';
+let currentSubject = 'physics'; // Default fallback
 let currentTopic = 'All';
 let filteredIndicesList = []; 
 let activeModalIndex = 0;     
+
+// 🔍 AUTO-DETECT SUBJECT FROM FILE NAME
+const pageName = window.location.pathname.split("/").pop();
+if (pageName.includes("chemistry")) {
+  currentSubject = 'chemistry';
+} else if (pageName.includes("biology")) {
+  currentSubject = 'biology';
+} else if (pageName.includes("physics")) {
+  currentSubject = 'physics';
+}  
 
 // ==========================================
 // 3. DROPDOWN POPULATOR
 // ==========================================
 function updateTopicDropdown() {
   const dropdown = document.getElementById('topic-filter');
+  if (!dropdown || typeof questionsData === 'undefined') return;
+
   const subjectQuestions = questionsData.filter(q => q.subject === currentSubject);
   
   // 1. Map, clean colons/spaces, and filter out duplicates
   const cleanedTopics = subjectQuestions.map(q => {
-    // Normalizes "sp4: waves" and "sp4 waves" into "sp4: waves"
     let topic = q.topic.trim();
     if (topic.startsWith("sp") && !topic.includes(":")) {
-      // Finds the first space after the number and injects a colon
       const spaceIndex = topic.indexOf(" ");
       if (spaceIndex !== -1) {
         topic = topic.slice(0, spaceIndex) + ":" + topic.slice(spaceIndex);
@@ -3432,7 +3442,7 @@ function updateTopicDropdown() {
     return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
   });
   
-  let html = `<option value="All">All Topics</option>`;
+  let html = `<option value="All">All Physics Topics</option>`;
   uniqueTopics.forEach(topic => {
       html += `<option value="${topic}">${topic}</option>`;
   });
@@ -3447,6 +3457,7 @@ function updateTopicDropdown() {
 function renderQuestions() {
   const container = document.getElementById('questions-container');
   const heading = document.getElementById('feed-heading');
+  if (!container || typeof questionsData === 'undefined') return;
   
   filteredIndicesList = [];
   questionsData.forEach((q, index) => {
@@ -3467,12 +3478,12 @@ function renderQuestions() {
     return `
       <div class="card" onclick="openModal(${listPosition})">
         <div class="card-header">
-          <span class="question-number" style="font-weight: bold; color: #5d5fef; margin-right: 8px;">Q${listPosition + 1}.</span>
-          <span class="badge topic-badge">${q.topic}</span>
-          <span class="click-hint">Click to expand 🔍</span>
+          <span class="question-number" style="font-weight: bold; color: var(--primary); margin-right: 8px;">Q${listPosition + 1}.</span>
+          <span class="badge topic-badge" style="color: var(--text-muted); font-size: 0.9rem;">${q.topic}</span>
+          <span class="click-hint" style="color: var(--primary); font-size: 0.9rem;">Click to expand 🔍</span>
         </div>
         <div class="card-body">
-          <p class="question-text">${q.text}</p>
+          <p class="question-text" style="margin-top: 10px;">${q.text}</p>
           ${q.image ? `<img src="${q.image}" class="question-diagram">` : ''}
         </div>
       </div>
@@ -3500,22 +3511,24 @@ function loadModalQuestion() {
   const dataIndex = filteredIndicesList[activeModalIndex];
   const q = questionsData[dataIndex];
 
-  document.getElementById('modal-topic').innerText = `Q${activeModalIndex + 1}: ${q.topic}`;
+  document.getElementById('modal-topic').innerText = q.topic;
   document.getElementById('modal-counter').innerText = `${activeModalIndex + 1} of ${filteredIndicesList.length}`;
   document.getElementById('modal-text').innerText = q.text;
 
   const imgBox = document.getElementById('modal-image-container');
-  if (q.image) {
-    imgBox.innerHTML = `<img src="${q.image}" class="question-diagram" onclick="toggleImageFullscreen(this)">`;
-  } else {
-    imgBox.innerHTML = '';
+  if (imgBox) {
+    if (q.image) {
+      imgBox.innerHTML = `<img src="${q.image}" class="question-diagram" onclick="toggleImageFullscreen(this)">`;
+    } else {
+      imgBox.innerHTML = '';
+    }
   }
 
   // --- DYNAMIC MARKING SCHEME SUBTITLE PARSER ---
   const listEl = document.getElementById('modal-scheme-list');
+  if (!listEl) return;
   listEl.innerHTML = ""; // Wipe cleanly before rebuild
 
-  // Ensure content exists and isolate string fields
   let rawContent = "";
   if (Array.isArray(q.markingScheme)) {
     rawContent = q.markingScheme[0] || "";
@@ -3523,26 +3536,23 @@ function loadModalQuestion() {
     rawContent = q.markingScheme || "";
   }
 
-  // Split your multi-line marking scheme text block line-by-line
   const schemeLines = rawContent.split('\n');
 
   schemeLines.forEach(line => {
     const trimmedLine = line.trim();
-    if (trimmedLine === "") return; // Skip empty structural row entries
+    if (trimmedLine === "") return; 
 
     const li = document.createElement("li");
 
-    // Dynamic verification: lines ending in a colon (:) are subtitles
     if (trimmedLine.endsWith(":")) {
       li.innerHTML = `<strong>${trimmedLine}</strong>`;
-      li.style.marginTop = "1.2rem";     /* Elegant padding above subtitles */
-      li.style.listStyleType = "none";    /* Removes unnecessary bullet points from headings */
+      li.style.marginTop = "1.2rem";     
+      li.style.listStyleType = "none";    
       li.style.marginLeft = "0px";
     } else {
-      // Regular technical details/bullet lines
       li.textContent = trimmedLine;
-      li.style.listStyleType = "disc";    /* Keeps clean matching browser bullets */
-      li.style.marginLeft = "20px";       /* Offsets items slightly from bold breaks */
+      li.style.listStyleType = "disc";    
+      li.style.marginLeft = "20px";       
     }
 
     listEl.appendChild(li);
@@ -3581,15 +3591,6 @@ function switchSubject(subject) {
   currentSubject = subject;
   currentTopic = 'All';
   
-  const buttons = document.querySelectorAll('.subject-btn');
-  buttons.forEach(btn => {
-    if (btn.innerText.toLowerCase() === subject) {
-      btn.classList.add('active');
-    } else {
-      btn.classList.remove('active');
-    }
-  });
-  
   updateTopicDropdown();
   renderQuestions();
 }
@@ -3599,7 +3600,6 @@ function filterByTopic() {
   renderQuestions();
 }
 
-// Fullscreen image zoom-state trigger
 function toggleImageFullscreen(imgElement) {
   imgElement.classList.toggle('fullscreen');
 }
@@ -3613,6 +3613,7 @@ window.onscroll = function() {
 
 function handleScrollBehavior() {
   const topBtn = document.getElementById("backToTopBtn");
+  if (!topBtn) return;
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     topBtn.style.display = "block";
   } else {
@@ -3627,6 +3628,8 @@ function scrollToTop() {
   });
 }
 
-// Bootstrap Initialization
-updateTopicDropdown();
-renderQuestions();
+// Safely boot app execution engine after everything has loaded cleanly
+window.onload = function() {
+  updateTopicDropdown();
+  renderQuestions();
+};
