@@ -550,3 +550,79 @@ body {
   .top-nav-bar { padding: 16px 20px; }
   .nav-links-cluster { gap: 16px; }
 }
+/* The Main Menu Button */
+/* ==========================================
+   OVERHAULED RIGHT-SIDE MENU COMPONENT
+   ========================================== */
+
+/* The Main Menu Button Layout */
+.menu-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--primary); /* Uses your premium purple brand variable */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.menu-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+/* The Side Navigation Panel - Configured for the Right Side */
+.side-menu {
+    height: 100%;
+    width: 0; /* Starts hidden at 0 width layout */
+    position: fixed;
+    z-index: 9999; /* Higher priority than your pop-up modals */
+    top: 0;
+    right: 0; /* ⬅️ Moves the menu panel anchor from left to right side */
+    background-color: #0f172a; /* Slate dark background to match your site footer */
+    overflow-x: hidden;
+    transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Ultra-smooth modern easing */
+    padding-top: 80px;
+    box-shadow: -5px 0 25px rgba(15, 23, 42, 0.15);
+}
+
+/* Navigation Links inside the Side Menu */
+.side-menu a {
+    padding: 14px 32px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #94a3b8;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+/* Hover effects for options panel items */
+.side-menu a:hover {
+    color: #ffffff;
+    background-color: #1e293b;
+    padding-left: 38px; /* Elegant slight push-right effect on selection */
+}
+
+/* Position and style the close button on the top-LEFT of the panel */
+.side-menu .close-btn {
+    position: absolute;
+    top: 15px;
+    left: 24px; /* ⬅️ Moved from right to left to stay clear of right margin text */
+    font-size: 32px;
+    color: #64748b;
+    padding: 0;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.side-menu .close-btn:hover {
+    color: #ef4444; /* Turns warning red on hover */
+    background-color: transparent;
+}
