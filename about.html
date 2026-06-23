@@ -7,80 +7,165 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="7f2b7de7-ae0b-407a-bd67-a8b2489c8e01"></script>
+
+    <style>
+        /* Ensures the sticky layout wrapper pushes the footer cleanly down on short pages */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+        }
+        .content-wrapper {
+            flex: 1 0 auto;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Global Top Nav Bar -->
-    <nav class="top-nav-bar">
-        <h1 class="brand-title">Science 6-Marker Hub</h1>
-        <div class="nav-links-cluster">
-            <a href="index.html" class="top-nav-link">Home</a>
-            <a href="about.html" class="top-nav-link">About Us</a>
-            <a href="services.html" class="top-nav-link">Services</a>
-            <a href="contact.html" class="top-nav-link">Contact Us</a>
+    <div class="content-wrapper">
+
+        <!-- RIGHT-SLIDE NAVIGATION PANEL -->
+        <div id="sideMenu" class="side-menu">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+            <a href="index.html" onclick="toggleMenu()">Home</a>
+            <a href="physics.html" onclick="toggleMenu()">Physics</a>
+            <a href="chemistry.html" onclick="toggleMenu()">Chemistry</a>
+            <a href="biology.html" onclick="toggleMenu()">Biology</a>
+            <a href="about.html" onclick="toggleMenu()">About Us</a>
+            <a href="service.html" onclick="toggleMenu()">Services</a>
+            <a href="contact.html" onclick="toggleMenu()">Contact Us</a>
         </div>
-    </nav>
 
-    <!-- Main Content Container -->
-    <div class="app-container">
-        
-        <header class="subject-header">
-            <a href="index.html" class="back-link">← Back to Dashboard</a>
-            <h2 class="subject-title">ℹ️ About Us</h2>
-            <p class="subject-subtitle">Master the pesky 6-Mark questions for GCSE Exam papers</p>
-        </header>
-
-        <main class="card" style="cursor: default; padding: 45px; max-width: 850px; margin: 0 auto 40px auto;">
+        <!-- GLOBAL TOP NAVIGATION BAR -->
+        <nav class="top-nav-bar">
+            <a href="index.html" class="brand-logo-link" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <div class="logo-icon-wrapper" style="display: flex; align-items: center; justify-content: center; background: rgba(37, 99, 235, 0.08); padding: 8px; border-radius: 10px; border: 1px solid rgba(37, 99, 235, 0.15);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="12" rx="3" ry="9" transform="rotate(45 12 12)"></ellipse>
+                        <ellipse cx="12" cy="12" rx="3" ry="9" transform="rotate(-45 12 12)"></ellipse>
+                        <circle cx="12" cy="12" r="2" fill="#2563eb"></circle>
+                    </svg>
+                </div>
+                
+                <div class="logo-text-wrapper" style="display: flex; flex-direction: column; line-height: 1.1;">
+                    <h1 class="brand-title" style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin: 0; letter-spacing: -0.02em;">
+                        Science <span style="color: #2563eb;">6-Marker</span>
+                    </h1>
+                    <span class="logo-subtext" style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #64748b;">
+                        Revision Hub
+                    </span>
+                </div>
+            </a>
             
-            <!-- Header Section with Decorative Accent -->
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                </svg>
-                <h2 style="font-size: 1.8rem; color: var(--primary); font-weight: 700; margin: 0; text-transform: none;">The idea behind the masterpiece</h2>
+            <div class="nav-links-cluster">
+                <button class="menu-btn" onclick="toggleMenu()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    Menu
+                </button>
             </div>
+        </nav>
+
+        <div class="app-container">
             
-            <!-- Introduction Paragraph -->
-            <p class="question-text" style="margin-bottom: 24px; font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
-                6-mark questions are difficult; there is no doubt about it. You could write your entire textbook as an answer for a question but still score a 3 out of 6 because it "doesn't match the marking scheme". It is annoying, and for a while, I too was struggling with such an issue. No matter how much time I spent revising my teacher's PPTs, the outcome was always the same. That was until I finally understood something.
-            </p>
-            
-            <!-- The Lightbulb Insight Block Quote -->
-            <div style="background: rgba(93, 95, 239, 0.05); border-left: 4px solid var(--primary); padding: 20px 24px; margin-bottom: 28px; border-radius: 0 8px 8px 0;">
-                <p class="question-text" style="font-style: italic; margin-bottom: 0; font-size: 1.05rem; color: var(--text-main); font-weight: 500; line-height: 1.7;">
-                    "Many people think that to excel in an exam you need to revise the content thoroughly, and while there is some truth in that, the absolute key to becoming a topper is right in the past papers. An examiner can only ask you so many questions until he finally runs out of variations if the core content stays the same."
+            <header class="subject-header">
+                <a href="index.html" class="back-link">← Back to Dashboard</a>
+                <h2 class="subject-title">ℹ️ About Us</h2>
+                <p class="subject-subtitle">Master the pesky 6-Mark questions for GCSE Exam papers</p>
+            </header>
+
+            <main class="card" style="cursor: default; padding: 45px; max-width: 850px; margin: 0 auto 40px auto;">
+                
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                    <h2 style="font-size: 1.8rem; color: var(--primary); font-weight: 700; margin: 0; text-transform: none;">The idea behind the masterpiece</h2>
+                </div>
+                
+                <p class="question-text" style="margin-bottom: 24px; font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+                    6-mark questions are difficult; there is no doubt about it. You could write your entire textbook as an answer for a question but still score a 3 out of 6 because it "doesn't match the marking scheme". It is annoying, and for a while, I too was struggling with such an issue. No matter how much time I spent revising my teacher's PPTs, the outcome was always the same. That was until I finally understood something.
                 </p>
-            </div>
-
-            <!-- Strategy Core Paragraph -->
-            <p class="question-text" style="margin-bottom: 32px; font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
-                So, why not just master every single type of question he could ask? In that case, you would always be two steps ahead. If you memorize the exact marking scheme requirements for every topic, there is simply no way for you to lose easy marks.
-            </p>
-
-            <!-- Visual Feature Row / Platform Pillars -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
-                <div style="text-align: center; padding: 10px;">
-                    <span style="font-size: 1.5rem;">🎯</span>
-                    <h4 style="margin: 8px 0 4px 0; font-size: 0.95rem; color: var(--text-main); font-weight: 600;">100% Exam Standards</h4>
+                
+                <div style="background: rgba(93, 95, 239, 0.05); border-left: 4px solid var(--primary); padding: 20px 24px; margin-bottom: 28px; border-radius: 0 8px 8px 0;">
+                    <p class="question-text" style="font-style: italic; margin-bottom: 0; font-size: 1.05rem; color: var(--text-main); font-weight: 500; line-height: 1.7;">
+                        "Many people think that to excel in an exam you need to revise the content thoroughly, and while there is some truth in that, the absolute key to becoming a topper is right in the past papers. An examiner can only ask you so many questions until he finally runs out of variations if the core content stays the same."
+                    </p>
                 </div>
-                <div style="text-align: center; padding: 10px; border-left: 1px solid var(--border); border-right: 1px solid var(--border);">
-                    <span style="font-size: 1.5rem;">⚡</span>
-                    <h4 style="margin: 8px 0 4px 0; font-size: 0.95rem; color: var(--text-main); font-weight: 600;">All Target Variations</h4>
-                </div>
-                <div style="text-align: center; padding: 10px;">
-                    <span style="font-size: 1.5rem;">🧠</span>
-                    <h4 style="margin: 8px 0 4px 0; font-size: 0.95rem; color: var(--text-main); font-weight: 600;">Built for Toppers</h4>
-                </div>
-            </div>
 
-            <!-- Conclusion Paragraph -->
-            <p class="question-text" style="margin-bottom: 0; font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
-                It was an excellent idea, but following through with it was a challenge. So many past papers, and each one containing a lot more questions. But I decided that I would take it on. I carefully analyzed every question relevant to GCSE and procured every marking scheme across GCSE, IGCSE, and legacy boards. Finally, all of them reside here, in one place, for anyone to use.
-            </p>
-        </main>
+                <p class="question-text" style="margin-bottom: 32px; font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+                    So, why not just master every single type of question he could ask? In that case, you would always be two steps ahead. If you memorize the exact marking scheme requirements for every topic, there is simply no way for you to lose easy marks.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border);">
+                    <div style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.5rem;">🎯</span>
+                        <h4 style="margin: 8px 0 4px 0; font-size: 0.95rem; color: var(--text-main); font-weight: 600;">100% Exam Standards</h4>
+                    </div>
+                    <div style="text-align: center; padding: 10px; border-left: 1px solid var(--border); border-right: 1px solid var(--border);">
+                        <span style="font-size: 1.5rem;">⚡</span>
+                        <h4 style="margin: 8px 0 4px 0; font-size: 0.95rem; color: var(--text-main); font-weight: 600;">All Target Variations</h4>
+                    </div>
+                    <div style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.5rem;">🧠</span>
+                        <h4 style="margin: 8px 0 4px 0; font-size: 0.95rem; color: var(--text-main); font-weight: 600;">Built for Toppers</h4>
+                    </div>
+                </div>
+
+                <p class="question-text" style="margin-bottom: 0; font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+                    It was an excellent idea, but following through with it was a challenge. So many past papers, and each one containing a lot more questions. But I decided that I would take it on. I carefully analyzed every question relevant to GCSE and procured every marking scheme across GCSE, IGCSE, and legacy boards. Finally, all of them reside here, in one place, for anyone to use.
+                </p>
+            </main>
+        </div>
 
     </div>
 
+    <!-- MODERN GLOBAL FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h4>Science 6-Marker Hub</h4>
+                <p>An open-access revision portal meticulously designed to help UK secondary students master technical keyword accuracy and maximize core science mock scores.</p>
+            </div>
+            <div class="footer-links-group">
+                <div class="footer-column">
+                    <h5>Revision Categories</h5>
+                    <a href="physics.html">Physics Questions</a>
+                    <a href="chemistry.html">Chemistry Questions</a>
+                    <a href="biology.html">Biology Questions</a>
+                </div>
+                <div class="footer-column">
+                    <h5>Platform</h5>
+                    <a href="about.html">Our Methodology</a>
+                    <a href="service.html">Services & Tools</a>
+                    <a href="contact.html">Support & Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Science 6-Marker Hub. Built for student success.</p>
+            <div class="footer-meta-links">
+                <a href="about.html#privacy">Privacy Policy</a>
+                <a href="about.html#terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("sideMenu");
+            if (menu.style.width === "250px") {
+                menu.style.width = "0";
+            } else {
+                menu.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>
